@@ -1,0 +1,123 @@
+
+1. cd 
+   
+   --> cd is change directory
+   
+  --> use:
+      cd directory_name
+   
+   i)  cd ./ => means staying in same directory
+   ii) cd ../ => means going to parent directory
+   iii) cd ../../ => means going to parent's parent
+   iv) cd ../../../ => means going to parent's parent's parent
+   v) cd /  => means going to root directory
+   vi) cd ~ => means going to current user's directory
+   vii) cd - => It undo previous cd command
+
+2. echo and alias
+   
+   --> alias is a means second name, echo it's job to print.
+   --> In simple, alias store a value in a variable and echo print.
+   
+   --> we can write alias directly in : " vi ~/.bash_profile"
+
+3. ls
+   
+   -->It prints the child of directly
+   --> ls -l 
+        show you the permission of child files
+
+4. tree
+   
+   --> It prints the entire tree of that directory
+  
+   --> But you have to install it. To install use below command sequentially:-
+        
+           i)     sudo rm /etc/apt/preferences.d/nosnap.pref
+           ii)    sudo apt update
+         iii)     sudo apt install snapd
+          iv)     sudo snap install tree
+
+
+5. pwd
+   
+   --> pwd = present working directory(starting from root)
+   --> It will give you the directory
+
+6.  mkdir 
+      
+   --> mkdir = make directory
+   --> method: " mkdir folder_name "
+   --> To create multiple directory in same line use
+          
+          " mkdir -p 1/2/3/4 "
+          1/2/3/4 are directories
+
+7. touch
+   
+   touch=create file
+   --> method:
+         "touch file_name.txt "
+ 
+8. cat
+   
+    --> method:
+        " cat file_name"
+    --> it will print that file
+
+9. rm
+   
+   --> method:
+     "rm file_name"
+    -->rm delete the file
+
+10. rmdir
+    --> method: " rmdir directory_path " 
+    --> It remove last directory
+
+11. rm -r 
+   It remove child directory recursivesly  
+
+------------------------  permission------
+
+They are 3 types of permission:
+
+(i)read (r)
+(ii)write (w)
+(iii)execution (x) 
+
+They are 3 set of permission:
+
+i)Owner
+ii)group you are in.
+ii)others user
+
+
+1. chmod
+     
+    chmod = change or modify
+    
+    --> method:"chmod -permission file_name"
+    ex: if you want to remove the write permission
+        " chmod -w file_name "
+        to restore it
+        " chmod +w file_name"
+
+2. ps aux
+
+    --> it shows you the all the ruuning progrmme.
+
+3.kill process_id.
+   It will kill the process
+
+4. To count total no of running process
+   
+   --> ps aux | wc -l
+5. To count total no of running files
+   --> ls -l | wc -l
+
+5. to count total no of line in  a file
+   --> wc -l < file.txt
+
+6. grep
+   --> It is used for log files

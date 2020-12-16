@@ -1,0 +1,114 @@
+How to install :
+
+   i) first install git
+
+How to setup master branch or email and user name:
+    
+    use
+
+      i) git config --global user.name 'use your user name'
+
+      ii) git config --global user.email 'use your email'
+
+How to add a file:
+    
+    There are different ways to add file
+      
+      i)    git add filename
+      
+      ii)   git add *.html  
+               it is going to add all the file that end with '.html'     
+      
+      iii)  git add --all
+                it is going to add all the file
+
+How to remove a file from staging process:
+    
+    i) git rm --cached index.html
+
+
+How to check status:
+    
+    i) git status
+
+
+How to commit a file:
+    
+    i) git commit -m "Enter your comit"
+     
+    ii) git commit
+        
+         it is going to open vim
+
+
+How to Ignore some files while using git add .
+    
+    i) First create a file .gitignore
+
+    ii) Add all the file that you don't want to add in staging process
+
+    iii) Add all the files in seperate line
+
+    iv) you can add also the folder path and all the folders or files will be ignore 
+
+            
+            
+            
+    ########    This is very Important #######
+
+
+How to create a new Branch and How to switch Branch:
+     
+    To create a branch use:
+        
+        git branch branch_name
+
+    How to switch to a branch:
+
+        git checkout branch_name 
+
+
+Note:  When we switch a branch from another branch,
+       all the files and changes will be gone expect changes from master branch
+
+
+How to add Two branch:
+  
+  From the master branch, we can merge branchs
+
+     To merge:
+
+       i) git merge branch_name
+
+           It will open vim and tell you to commit why you are branching  
+
+
+
+##################   How To Contribute  ##############
+
+1. First find and open issue and check if someone solving or that issue or not
+
+2. Before solving an open issue or found issue, first let that person know about the bug or you find an issue
+
+3. If he tells you solve that, then only solve solve this by letting everyone know that you are solving that
+
+
+        ###########            ##############
+
+        1. First fork the repository in your own repository
+
+        2. Then clone that repository
+
+        3. If that person tells you to create a branch with cretain name do that first and tried to solve that in that branch
+
+        4. If you complete your task then push that code in your own repository
+           
+           it will tell you to set up origin branch To that
+        
+        5. Then it will show you to pull new request do that
+
+        6. At first it will verify your code then it will tells you that you can merge this file with origin file or not
+
+        7. If yes write a comment about that you solve that issue and click the pull button
+
+        8. Your work is done
